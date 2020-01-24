@@ -35,6 +35,8 @@ public class CloneExample implements Cloneable {
 		
 	
 		
+		
+		
 	//niaspudhp7ig79ghfiuasdghpuidfg
 	//	CloneExample obj2 = (CloneExample) Class.forName("CloneExample").newInstance(); // throws
 																						// ClassNotFoundExeption    // from branch 2
