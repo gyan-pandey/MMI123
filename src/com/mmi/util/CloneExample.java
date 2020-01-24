@@ -18,6 +18,14 @@ public class CloneExample implements Cloneable {
 			CloneExample obj1 = CloneExample.class.newInstance();
 			CloneExample obj2 = (CloneExample) Class.forName("CloneExample").newInstance(); // throws
 																							// ClassNotFoundExeption
+			
+			
+			
+			
+		//	CloneExample obj1 = CloneExample.class.newInstance();
+		//	CloneExample obj2 = (CloneExample) Class.forName("CloneExample").newInstance(); // throws
+																							// ClassNotFoundExeption
+			
 			CloneExample obj3 = (CloneExample) obj1.clone();
 			System.out.println(obj1.name);
 			System.out.println(obj2.name);
