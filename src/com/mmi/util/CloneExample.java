@@ -23,8 +23,8 @@ public class CloneExample implements Cloneable {
 			System.out.println(obj2.name);
 			
     //	CloneExample obj1 = CloneExample.class.newInstance();
-	//	CloneExample obj2 = (CloneExample) Class.forName("CloneExample").newInstance(); // throws
-																								// ClassNotFoundExeption
+	//	CloneExample obj2 = (CloneExample) Class.forName("CloneExample").newInstance(); // throws                    // from branch 2
+																					// ClassNotFoundExeption
 			
 			System.out.println(obj3.name);
 			Properties p = new Properties();
@@ -37,7 +37,7 @@ public class CloneExample implements Cloneable {
 		
 	//	CloneExample obj1 = CloneExample.class.newInstance();
 	//	CloneExample obj2 = (CloneExample) Class.forName("CloneExample").newInstance(); // throws
-																						// ClassNotFoundExeption
+																						// ClassNotFoundExeption    // from branch 2
 		
 		catch (ClassNotFoundException e)
 
@@ -53,10 +53,15 @@ public class CloneExample implements Cloneable {
 			e.printStackTrace();
 		} catch (CloneNotSupportedException e) {
 			e.printStackTrace();
+			
+			
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
+		// e.printStackTrace();
+		///  e.printStackTrace();      frombranch 2
 
 	}
 }
