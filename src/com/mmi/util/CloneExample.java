@@ -38,7 +38,10 @@ public class CloneExample implements Cloneable {
 		catch (ClassNotFoundException e)
 
 		{
-			e.printStackTrace();
+			e.printStackTrace();   
+		//	e.printStackTrace();  
+		//	e.printStackTrace();	
+			
 		} catch (InstantiationException e)
 
 		{
