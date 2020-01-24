@@ -18,23 +18,27 @@ public class CloneExample implements Cloneable {
 			CloneExample obj1 = CloneExample.class.newInstance();
 			CloneExample obj2 = (CloneExample) Class.forName("CloneExample").newInstance(); // throws
 																							// ClassNotFoundExeption
-			
-			
-			
-			
-		//	CloneExample obj1 = CloneExample.class.newInstance();
-		//	CloneExample obj2 = (CloneExample) Class.forName("CloneExample").newInstance(); // throws
-																							// ClassNotFoundExeption
-			
 			CloneExample obj3 = (CloneExample) obj1.clone();
 			System.out.println(obj1.name);
 			System.out.println(obj2.name);
+			
+    //	CloneExample obj1 = CloneExample.class.newInstance();
+	//	CloneExample obj2 = (CloneExample) Class.forName("CloneExample").newInstance(); // throws                    // from branch 2
+																					// ClassNotFoundExeption
+			
 			System.out.println(obj3.name);
 			Properties p = new Properties();
 			FileOutputStream f = new FileOutputStream("config.properties");
 
 		}
 
+		
+		
+		
+	//	CloneExample obj1 = CloneExample.class.newInstance();
+	//	CloneExample obj2 = (CloneExample) Class.forName("CloneExample").newInstance(); // throws
+																						// ClassNotFoundExeption    // from branch 2
+		
 		catch (ClassNotFoundException e)
 
 		{
@@ -52,10 +56,15 @@ public class CloneExample implements Cloneable {
 			e.printStackTrace();
 		} catch (CloneNotSupportedException e) {
 			e.printStackTrace();
+			
+			
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
+		// e.printStackTrace();
+		///  e.printStackTrace();      frombranch 2
 
 	}
 }
